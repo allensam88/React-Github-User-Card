@@ -6,7 +6,7 @@ import './App.css';
 class App extends React.Component {
   state = {
     user: {},
-    followers: {}
+    followers: []
   }
 
   componentDidMount () {
@@ -27,7 +27,7 @@ class App extends React.Component {
         axios
           .get('https://api.github.com/users/allensam88/followers')
           .then(response => {
-            console.log(response);
+            console.log(response.data);
             this.setState({
               followers: response.data
             });
@@ -35,10 +35,6 @@ class App extends React.Component {
           .catch(err => console.log(err));
       }
     }
-
-    // if (prevProps.someValue !== this.props.someValue) {
-    // }
-  
 
   render () {
     return (

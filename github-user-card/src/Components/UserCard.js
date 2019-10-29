@@ -1,4 +1,5 @@
 import React from 'react';
+import Followers from './Followers';
 
 class UserCard extends React.Component {
     constructor () {
@@ -10,9 +11,9 @@ class UserCard extends React.Component {
         return (
             <div>
                 <h2>{this.props.user.name}</h2>
-                {/* {this.props.followers.map(item => (
-                    <p>{item}</p>)
-                )} */}
+                {this.props.followers.map(item => (
+                    <Followers key={item.id} item={item}/>
+                ))}
                 
             </div>
         )
