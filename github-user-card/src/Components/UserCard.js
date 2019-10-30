@@ -1,5 +1,5 @@
 import React from 'react';
-import Followers from './Followers';
+import Follower from './Follower';
 
 class UserCard extends React.Component {
     constructor () {
@@ -9,12 +9,13 @@ class UserCard extends React.Component {
 
     render () {
         return (
-            <div>
+            <div className='card'>
+                <img src={this.props.user.avatar_url} alt='profile avatar' className='cardImg' />
                 <h2>{this.props.user.name}</h2>
-                {this.props.followers.map(item => (
-                    <Followers key={item.id} item={item}/>
-                ))}
-                
+                <p>Location: {this.props.user.location}</p>
+                <p>Bio: {this.props.user.bio}</p>
+                <p>Followers: {this.props.user.followers}</p>
+                <p>Following: {this.props.user.following}</p>
             </div>
         )
     }

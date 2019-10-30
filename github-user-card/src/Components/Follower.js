@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Followers extends React.Component {
+class Follower extends React.Component {
     constructor () {
         super ();
         this.state = {}
@@ -8,12 +8,12 @@ class Followers extends React.Component {
 
     render () {
         return (
-            <div>
+            <div className='follower'>
+                <img src={this.props.item.avatar_url} alt='profile avatar' className='followerImg' />
                 <p>{this.props.item.login}</p>
-            
             </div>
         )
     }
 }
 
-export default Followers;
+export default Follower;
