@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.search {
+  border: 2px solid lightgreen;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.search_btn {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: lightgreen;
+}
+
+.search_btn:hover {
+  color: white;
+  background-color: gray;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 5px solid blue;
+  border-radius: 10px;
+  width: 50%;
+  margin: 30px;
+  padding: 10px;
+  background-color: dodgerblue;
+}
+
+.card h2, p {
+  margin: 5px auto;
+}
+
+.cardImg {
+  width: 300px;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+.followersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  border: 5px solid red;
+  border-radius: 10px;
+  background-color: salmon;
+  margin: 30px;
+}
+
+.follower {
+  margin: 20px;
+}
+
+.followerImg {
+  width: 150px;
+  border: 2px solid red;
+  border-radius: 5px;
+}
